@@ -1,8 +1,14 @@
 #################
+## sublime
+#################
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+
+#################
 ## Content
 #################
 *.pdf
-
 
 #################
 ## Eclipse

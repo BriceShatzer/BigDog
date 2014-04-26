@@ -1,0 +1,27 @@
+/*	
+	Template - Northern Light
+	Author   - Neill Harmer	
+	Company  - Element Fusion
+	
+	Style    - style-ie.css
+				
+	WHAT IS THIS?
+	These are additional styles geared towards our favorite browser, Internet Explorer. put IE only styles here. 
+	Any items with a _ preceeding it is a "hack" to work only on IE6 
+*/
+
+	
+/* SITE ITEM TRANSPARENCY */
+img  { 
+	behavior: url("/Templates/iepngfix.htc")
+}	
+	
+		
+#navigation .mainNav .level2 {
+	top: 45px;
+}	
+
+
+.post .postViewInfo .postViewTags li a {
+	_display: inline-block;
+}	

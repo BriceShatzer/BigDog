@@ -1,0 +1,712 @@
+/*
+	Template - Northern Light	
+	Author   - Neill Harmer	
+	Company  - Element Fusion
+	
+	Style    - style-template.css	
+*/
+
+
+
+/* <textEditor> */ 
+	.fadeBreak {}
+
+	.textYellow, .textYellow a {color: #fcf6b1;}
+	.textBlue, .textBlue a {color: #43b2e6;}
+	.textGreen, .textGreen a {color: #84c441;}
+	
+	.imgBorder {clear: both; border: 4px solid #e5e3e0 !important; }
+	
+	.imgRight {float: right; margin: 0 0 10px 15px; clear: right; border: 4px solid #e5e3e0;}	
+	.imgLeft {float: left; margin: 0 15px 10px 0; clear: left; border: 4px solid #e5e3e0;}
+/* </textEditor> */
+
+
+/* LINKS */
+a {
+	color: #9ec826;
+}
+	.contents a:hover {	
+		text-decoration: underline;
+	}
+	
+	
+
+
+/* OL/UL */
+.contents ol {
+	list-style: decimal;
+	margin: 0 0 15px 45px;
+}
+	.contents ol li {
+		padding: 0 0 5px 10px;
+		color: #363636;
+	}	
+		
+.contents ul {
+	list-style: square;
+	list-style-image: url(images/li-bullet.gif);
+	margin: 0 0 15px 40px;
+}
+	.contents ul li {
+		padding: 0 0 5px 10px;
+		color: #363636;
+	}	
+	
+	/*  for blog/calendar list items to still have list bullets */	
+	.blogList ul li ul, .eventsList ul li ul {margin: 15px 35px !important;}
+	     .blogList ul li li, .blogList ul li ul, .eventsList ul li li, .eventsList ul li ul {list-style: square !important;}
+	.blogList ol li ul, .eventsList ol li ul {margin: 15px 35px !important;}
+	     .blogList ol li li, .blogList ol li ul, .eventsList ol li li, .eventsList ol li ul {list-style: decimal !important;}
+
+	
+
+		 
+		 
+		 
+/* PARAGRAPHS */
+.contents p {
+	margin: 0 0 15px 0;
+}
+	p[align="right"], 
+	p.right {
+		float: right;
+		margin: 0 8px 15px;
+	}	
+	p[align="left"], 
+	p.left {
+		float: left;
+		margin: 0 8px 15px;
+	}
+
+
+	
+
+
+	
+
+/* HORIZONTAL RULES */
+.contents hr {
+	border: 1px solid #e6e6e6;
+	border-width: 1px 0 0 0;
+	border-collapse: collapse;
+	clear: both;
+	margin: 10px 0 15px;
+}
+
+
+
+
+
+/* GENERAL SITE HEADINGS */	
+h1 {
+	margin: 10px 0 15px;
+	font-size: 30px;
+	color: #353535;
+	line-height: 1em;
+}		
+	#extraColumn h1.title {		
+		font-size: 18px
+	}		
+	
+h2 {
+	margin: 10px 0 15px;
+	font-size: 24px;
+	color: #353535;
+	line-height: 1.2em;
+}	
+
+h3 {
+	margin: 10px 0 15px;
+	font-size: 20px;
+	color: #353535;
+	line-height: 1.2em;
+}
+
+h4 {
+	margin: 10px 0 15px;
+	font-size: 18px;
+	color: #353535;
+	line-height: 1.2em;
+}	
+
+h5 {
+	margin: 10px 0 15px;
+	font-size: 16px;
+	color: #353535;
+	line-height: 1.4em;
+}	
+
+h6 {
+	margin: 10px 0 15px;
+	font-size: 14px;
+	color: #353535;
+	line-height: 1.4em;
+}	
+
+
+	
+	
+
+
+
+
+
+
+	
+/* BLOG ITEM */	
+/* blog listing */		
+.blogList {
+	padding: 0;		
+}
+	.blogList ul {
+		margin: 0 !important;
+		padding: 0 !important;
+		list-style: none;
+		list-style-image: none;
+	}
+		.blogList ul li {
+			list-style: none;
+			list-style-image: none;
+			margin: 0 !important;
+			padding: 0 0 5px !important;
+		}
+		
+		.blogList ul li h2.postTitle {
+			font-size: 14px;
+			line-height: 1;
+			margin: 0 0 5px;
+		}
+			.blogList ul li h2.postTitle a {	
+				color: #43b2e6;			
+			}
+			
+		.blogList ul li .postInfo {
+			margin: 0 0 15px;
+		}	
+			.blogList ul li .postInfo span.postDate {
+				color: #898989;
+			}
+			
+			.blogList ul li .postInfo em a {
+				color: #898989;				
+			}		
+			
+
+/* post detail page */
+.post h2 {
+	font-size: 30px;
+	color: #353535;
+}
+.post .postDate {
+	margin: 0 0 15px 0;
+	color: #898989;
+	font-size: 13px !important;
+}
+
+.post .postViewInfo {
+	background: none;
+	margin-bottom: 15px;
+	border: none !important;
+	padding: 0;
+	margin: 0;
+	color: #727272 !important;
+	font-size: 1.2em !important;
+}
+	.post .postViewInfo .postViewTags {
+		margin: 0 !important;
+		padding: 0 !important;
+		list-style: none;
+		list-style-image: none;
+		color: #727272;
+		font-size: 12px !important;
+		clear: both !important;
+		display: block !important;
+	}
+		.post .postViewInfo .postViewTags li {
+			float: left;
+			list-style: none;
+			list-style-image: none;
+			margin: 5px 5px 15px 0 !important;
+			padding: 0;
+		}
+			.post .postViewInfo .postViewTags li a {
+				display: block;
+				background: #f3f3f3;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				color: #727272;
+				border: none;
+				padding: 3px 11px;
+				text-decoration: none !important;
+			}			
+				ul.postViewTags:before { 
+					content: '' !important; 
+				}
+				ul.postViewTags li:before { 
+					content: '' !important; 
+				}
+				.post span.ieOnly {
+					display: none !important;
+				}
+		
+.post .blogBack {
+	display: none;
+}	
+		
+
+
+/* blog comments */
+.commentsHead {
+	padding-top: 35px;
+	font-size: 24px;
+	font-weight: normal;
+	clear: both;
+}
+	.commentsHead a {
+		color: #43b2e6;
+		font-size: 18px;
+	}
+	
+.comments {
+}
+	.comments dl {
+		background: transparent !important;		
+	}	
+		dt.comment {
+			background: transparent !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			font-size: 14px;
+			position: relative;
+		}		
+			dt.comment .commentNumber {
+				display: none;
+			}	
+			dt.comment a {
+				font-weight: bold;
+				text-decoration: none;
+				color: #333 !important;
+			}			
+		
+		dd.comment {			
+			background: transparent !important;
+			margin: 5px 0 25px !important;
+			padding: 0 !important;
+			border-left: 4px solid #f8f8f8;
+			padding-left: 10px !important;
+		}					
+			dd.comment .commentDate {		
+				font-size: 11px;
+				color: #898989;
+			}
+	
+	
+	
+/* comments form */
+.commentsForm {
+	clear: both;
+	padding-top: 35px;
+}
+	.commentsForm .addComment {
+		font-size: 24px;
+		font-weight: normal;
+		clear: both;
+	}
+	
+	.commentsForm label {
+		font-weight: bold;
+		display: block;
+		color: #525252;
+		font-size: 13px;
+	}
+	
+	.commentsForm input, 
+	.commentsForm textarea {
+		font-size: 13px;
+		background: #fff;
+		border: 1px solid #dedede;
+		color: #3e3e3e;
+		padding: 6px 10px;
+		margin: 5px 0 10px;
+	}
+	
+	.commentsForm span {
+		font-weight: bold;
+		color: #525252;
+		font-size: 13px;
+	}
+	
+	.commentsForm img {
+		margin: 5px 0;
+		border: 1px solid #f4f4f4;
+	}
+	
+	.commentsForm input.submitComment {
+		height: 30px;
+		background: url(images/search-button-bg.gif) 0 0 repeat-x;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: 1px solid #dedede;
+		color: #3e3e3e;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #fff;
+		font-weight: bold;
+		margin-left: 2px;
+		width: 200px;
+		cursor: pointer;
+	}
+	
+	.commentsForm .note {
+		color: #898989;
+		font-size: 11px;
+	}
+		.commentsForm .note strong {
+			display: block;
+		}
+
+	
+	
+	
+	
+
+/* EVENTS / CALENDAR */
+/* event list */		
+.eventsList {
+	padding: 0;		
+}
+	.eventsList ul {
+		margin: 0 !important;
+		padding: 0 !important;
+		list-style: none;
+		list-style-image: none;
+	}
+		.eventsList ul li {
+			list-style: none;
+			list-style-image: none;
+			padding: 0 0 5px;
+		}
+		
+		.eventsList ul li a {
+			font-size: 14px;
+			line-height: 1;
+			font-weight: bold;
+			color: #43b2e6;
+		}
+			
+		.eventsList ul li .eventDate {
+			margin: 0 0 15px;
+			color: #898989;
+		}	
+
+
+/* graphic tabular events calendar */
+.eventsCalendar table {
+	border: none;
+	border-color: #fff !important;
+	width: 100%;
+	border-collapse: collapse;
+}		
+	.calendarDay, 
+	.calendarToday, 
+	.calendarDayHeader, 
+	.calendarTitle td, 
+	.calendarWeekendDay, 
+	.calendarOtherMonthDay   {
+		padding: 2px;
+		border: 1px solid #fff !important;
+		text-align: center;
+		vertical-align: top;
+		background: #fff !important;
+		padding: 5px;
+	}
+	
+	.calendarTitle td { /* top bar with current month and next/previous buttons */
+		text-align: center;
+		color: #444 !important;
+		padding: 5px 4px !important;	
+		font-weight: bold !important;
+		background: #fff !important;
+		font-size: 1.1em;
+	}	
+		.calendarNextPrevious {
+			color: #444 !important;
+			font-weight: normal;
+		}	
+			.calendarNextPrevious a {
+				color: #444 !important;
+				font-weight: normal;
+			}	
+			
+				/* next/previous arrows */	
+				.calendarNextPrevious a[title="Go to the previous month"] {
+					display: block;
+					background: url(images/icon-arrow-left.png) 0 0 no-repeat; 
+					text-indent: -9999px;
+					border: 0;
+				}
+				.calendarNextPrevious a[title="Go to the next month"] {
+					display: block;
+					background: url(images/icon-arrow-right.png) 100% 0 no-repeat; 
+					text-indent: -9999px;
+					border: 0;
+				}
+				
+			
+	.calendarDayHeader { /* m-f bar */
+		color: #657171 !important;
+		background: #fff;
+		font-weight: bold;
+		height: 1px;
+		text-align: center;
+		padding: 4px 2px;
+	}	
+		
+	.calendarToday, 
+	.calendarToday a { /* current day */
+		color: #657171 !important;
+		font-weight: bold;
+	}	
+	.calendarWeekendDay { /* weekends */
+		color: #b0b0b0 !important;
+	}	
+	.calendarDay { 
+		color: #b0b0b0 !important;
+	}	
+		.calendarDay a {
+			color: #657171 !important;
+		}		
+	.calendarOtherMonthDay { /* previous or next months days on current months calendar */
+		color: #b0b0b0;
+	}
+		
+	
+		/* changes for when calendar is in subColumn */	
+		#subColumn .calendarToday a,
+		#subColumn .calendarDay a,
+		#subColumn .eventsCalendar table br  {
+			display: none;
+		}
+
+			
+			
+			
+/* calendar detail page */
+.event h2 {
+	font-size: 30px;
+	color: #353535;
+}
+.event .eventDate {
+	margin: 0 0 15px 0;
+	color: #898989;
+	font-size: 13px;
+}
+.event .eventBack p a {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+
+
+
+
+/* PHOTO GALLERY */
+/* thumbnails */
+.photoGalleryElement .thumbnail {
+	font-size: 12px !important;
+	background: none !important;
+	margin: 0 8px 15px 0 !important;
+}
+	.photoGalleryElement .thumbnail .thumbContents {
+		padding: 5px !important;
+		background: #EDEDED !important;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: none !important;
+	}
+		.photoGalleryElement .thumbnail .thumbContents a { 
+			border: none  !important;
+			text-decoration: none;
+			color: #333;
+		}
+			.photoGalleryElement .thumbnail .thumbContents a:hover { 
+				background: none !important;
+			}
+		.photoGalleryElement .thumbnail .thumbContents img { 
+			border: none !important;
+			margin-bottom: 3px;
+		}
+	
+/* thumbnails with shadows */
+.photoGalleryElement .thumbShadow {
+	font-size: 12px !important;
+	margin: 0 8px 15px 0 !important;
+}
+	.photoGalleryElement .thumbShadow .thumbContents a {
+		border: none !important;
+		text-decoration: none;
+		color: #333;
+	}
+			.photoGalleryElement .thumbShadow .thumbContents a:hover { 
+				background: none !important;
+			}
+	.photoGalleryElement .thumbShadow .thumbContents img {
+		padding: 5px !important;
+		background: #EDEDED !important;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: none !important;
+	}
+	
+	
+	
+	
+	
+	
+/* SEARCH RESULTS */
+.searchResults {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+	.searchResults li {
+		padding: 0 0 20px 0 !important;
+		margin: 0 !important;
+	}
+		.searchResults li a {
+			color: #43b2e6;		
+			font-size: 14px;
+		}
+		
+		.searchResults .searchTerm {
+			background-color: #d8d8d8 !important;
+			background-image: none !important;
+		}
+
+	
+	
+		
+	
+
+/* ICEBRRG */
+.form_container {	
+}	
+	.form_container .fieldItemInner {
+		margin: 0 0 10px 0;	
+		padding: 0;
+	}	
+	
+	.form_container .fieldTitle {
+		margin: 0;
+		padding: 0;
+	}	
+		.form_container .title {
+			font-weight: bold;
+			font-size: 14px;
+			margin: 0;
+			padding: 0;
+		}	
+	
+	.form_container .textField {
+		font-size: 13px;
+		background: #fff;
+		border: 1px solid #dedede;
+		color: #3e3e3e;
+		padding: 6px 10px;
+		margin: 5px 0 10px;
+	}	
+		
+	.form_container .fieldNote {
+		margin: 0 0 0 3px;	
+		padding: 0;
+		color: #bbb !important;
+	}	
+	
+	.form_container .dropdown {
+		padding: 5px 4px;
+		border: 1px solid #dedede;
+		background: #fff !important;
+		color: #3e3e3e;
+	}			
+	
+	.form_container .submitButton {
+		height: 30px;
+		background: url(images/search-button-bg.gif) 0 0 repeat-x;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: 1px solid #dedede;
+		color: #3e3e3e;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #fff;
+		font-weight: bold;
+		margin: 0;
+		cursor: pointer;
+	}
+	
+	.fieldSelected { /* background color of a selected field. */
+		background: transparent !important;
+		border-color: transparent !important;
+	}
+
+
+
+
+
+/* LOGIN FORM */	
+.loginElement {
+	padding-top: 20px;
+}	
+.loginElement p {
+	margin: 0 0 10px 0;
+	clear: both;
+}			
+.loginElement .error {
+	color: #993300;
+	font-size: 14px;
+}		
+	.loginElement label {
+		font-weight: bold;
+		display: block;
+		font-size: 14px;
+	}
+
+	.loginElement .username,
+	.loginElement .password {
+		font-size: 13px;
+		background: #fff;
+		border: 1px solid #dedede;
+		color: #3e3e3e;
+		padding: 6px 10px;
+		margin: 5px 0 10px;
+	}
+	
+	.loginElement .button {
+		height: 30px;
+		background: url(images/search-button-bg.gif) 0 0 repeat-x;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: 1px solid #dedede;
+		color: #3e3e3e;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #fff;
+		font-weight: bold;
+		margin: 0;
+	}
+		
+	.loginElement .forgot {
+		font-weight: bold;
+	}
+
+
+	
+	
+	
+	
+/* FIXING POPUP CONFIRMATION COLORS */
+.confirmation-content-message, 
+.confirmation-content-message * { 
+	color: #666 !important;
+}

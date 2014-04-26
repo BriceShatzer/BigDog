@@ -1,0 +1,441 @@
+
+
+/* <textEditor> */ 
+
+
+    .arrowGreen {background: url(template/arrow-right-green-trans.png) 0 60% no-repeat;    color: #709d16; padding-left: 12px; text-decoration: none;}
+    .arrowBlue {background: url(template/arrow-right-blue-trans.png) 0 60% no-repeat; color: #317099; padding-left: 12px; text-decoration: none;}
+    .arrowGold {background: url(template/arrow-right-gold-trans.png) 0 60% no-repeat; color: #d0b411; padding-left: 12px; text-decoration: none;}
+
+    .borderGrey {border: 4px solid #dad6d3;}    
+    .borderBlack {border: 4px solid #222;}    
+    
+    .textGreen, .textGreen a {color: #709d16;}
+    .textBlue, .textBlue a {color: #317099;}
+    .textGold, .textGold a {color: #d0b411;}
+
+    .fontGeorgia {font-family: georgia, serif;}
+    .fontTimes {font-family: "times new roman", times, serif;}    
+    .fontVerdana {font-family: verdana, sans-serif;}
+    .fontArial {font-family: arial, sans-serif;}
+    .fontTahoma {font-family: tahoma, sans-serif;}    
+    .fontHelvetica {font-family: Helvetica, arial, sans-serif;}            
+        
+    .fontSize10 {font-size: 10px;}
+    .fontSize11 {font-size: 11px;}
+    .fontSize12 {font-size: 12px;}
+    .fontSize13 {font-size: 13px;}
+    .fontSize14 {font-size: 14px;}
+    .fontSize15 {font-size: 15px;}
+    .fontSize16 {font-size: 16px;}
+    .fontSize17 {font-size: 17px;}
+    .fontSize18 {font-size: 18px;}
+    .fontSize19 {font-size: 19px;}
+    .fontSize20 {font-size: 20px;}
+    .fontSize21 {font-size: 21px;}
+    .fontSize22 {font-size: 22px;}
+    .fontSize23 {font-size: 23px;}
+    .fontSize24 {font-size: 24px;}
+    .fontSize25 {font-size: 25px;}
+    .fontSize26 {font-size: 26px;}
+    .fontSize27 {font-size: 27px;}
+    .fontSize28 {font-size: 28px;}
+    .fontSize29 {font-size: 29px;}
+    .fontSize30 {font-size: 30px;}    
+    
+    .left, .alignLeft {float: left; margin-right: 1em;}
+    .right, .alignRight {float: right; margin-left: 1em;}    
+    
+    .noborder {border: none !important;}
+    span.imageBorder img {border: 1px solid #333;}
+
+/* </textEditor> */ 
+
+
+
+
+
+/* GENERAL, SITEWIDE CONTENT CALLINGS */
+
+/* links */
+a {
+    color: #317099;
+    text-decoration: underline;
+}
+    a:visited {
+        color: #6eb0dc;
+    }
+    a:hover {
+        color: #317099;
+    }
+
+
+
+/* setting the OL/UL to specified values in the content areas */
+.contents ol {
+    list-style: decimal;
+    margin: 15px 35px;
+}
+    .contents ol li {
+        padding: 0 0 5px 0;
+    }    
+        
+.contents ul {
+    list-style: disc;
+    margin: 15px 25px;
+}
+    .contents ul li {
+        padding: 0 0 5px 0;
+    }
+    
+    /*  for blog/calendar list items to still have list bullets */    
+    .blogList ul li ul, .eventsList ul li ul {margin: 15px 35px !important;}
+         .blogList ul li li, .blogList ul li ul, .eventsList ul li li, .eventsList ul li ul {list-style: disc !important;}
+    .blogList ol li ul, .eventsList ol li ul {margin: 15px 35px !important;}
+         .blogList ol li li, .blogList ol li ul, .eventsList ol li li, .eventsList ol li ul {list-style: decimal !important;}
+
+
+
+/* want the paragraphs to have a nice even margin */
+.contents p {
+    margin: 0 0 15px 0;
+}
+
+
+
+/* want good looking horizontal rules */
+hr {
+    border: 1px dotted #333;
+    border-width: 1px 0 0 0;
+    border-collapse: collapse;
+    clear: both;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+/* GENERAL SITE HEADINGS */    
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.7em;
+    color: #D40400;
+    line-height: 1.2em;
+    font-weight: normal;
+}    
+    h1.title {
+    color: #D40400;
+        font-size: 2.2em;
+    }    
+
+h2 {
+    margin: 20px 0 10px 0;
+    font-size: 1.7em;
+    color: #D40400;
+    line-height: 1.4em;
+    font-weight: normal;
+}    
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #D40400;
+    line-height: 1.2em;
+    font-weight: normal;
+}        
+
+h4 {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #D40400;
+    line-height: 1.2em;
+}    
+
+h5 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #000;
+    line-height: 1.2em;
+}    
+    h1, h2, h3, h4, h5 {
+        font-family: "Helvetica Neue", HelveticaNeue, helvetica, arial, sans-serif;
+    }
+    h1 a, h2 a, h3 a, h4 a, h5 a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+
+ dl {margin-bottom:15px;}  
+ dd {margin-left:35px;
+	text-indent:-15px;}   
+    
+
+    
+/* ELEMENT SPECIFIC CALLINGS */
+    
+/* BLOG ITEM */    
+    /* blog listing page */
+    .blogList {
+        padding: 0;        
+    }
+        .blogList ul {
+            margin: 0 !important;
+            padding: 0 !important;
+            list-style: none;
+        }
+            .blogList ul li {
+                list-style: none;
+            }
+            
+            .blogList ul li h2.postTitle {
+                font-weight: normal !important;
+                color: #333 !important;
+                font-size: 1.3em;
+            }
+            
+            .blogList ul li  .postDate {
+                margin: 0 0 10px 0;
+                color: #666;
+            }
+                
+                
+            /* rss icon */
+            .rss img {border: none}
+                
+                
+    /* post detail page */
+    #secPage .post h2 {
+        margin: 0 0 0 0;
+    }
+        #secPage .post .postDate {
+            margin: 0 0 10px 0;
+            color: #666;
+            font-style: normal;
+        }
+        #secPage .post .blogBack {
+            margin: 10px 0;
+            font-weight: bold;
+            border-top: 1px dotted #dad6d3;
+        }
+    
+    
+    /* blog comments */
+    .comments {
+        padding-top: 10px;
+    }
+        .comments dl {
+            background: #ecede8 !important;
+        }    
+            dt.comment {
+                background: #fff !important;
+                font-weight: bold;
+                clear: both;
+            }            
+            dd.comment {            
+                background: #ecede8 !important;
+            }
+            
+                /* alternate colors, for the even posts
+                dt.comment.alternate {
+                    color: #930 !important;
+                }
+                dd.comment.alternate {
+                    color: #930 !important;
+                } */
+            
+            .commentDate {            
+                color: #999 !important;
+            }
+        
+        
+        
+    /* comments form */
+    .commentsForm {
+        clear: both;
+        padding-top: 15px;
+        width: 80%;
+    }
+        .commentsForm label {
+            font-weight: bold;
+        }
+        
+        .commentsForm input, .commentsForm textarea {
+            padding: 2px 4px;
+            font-family: arial;
+            font-size: 1em;
+        }
+        
+        .commentsForm img { /* this is for the captcha image */
+             margin: 5px 0;
+             border: 1px solid #999;
+        }
+        
+        .commentsForm input.submitComment {
+             margin: 10px 0;
+             background: #94c82b;
+             border: none;
+             padding: 4px 5px;
+             width: 250px;
+             color: #fff;
+             text-transform: uppercase;
+        }
+        
+        .commentsForm .note {
+            font-size: .9em;
+            color: #999;
+            font-style: italic;
+        }
+
+    
+    
+    
+    
+
+
+/* GRAPHIC TABULAR EVENTS CALENDAR */
+    .eventsCalendar table { /* entire table */
+        border: 1px solid #DAD6D3;
+        width: 100%;
+        border-collapse: collapse;
+    }        
+        .calendarDay, .calendarToday, .calendarDayHeader, .calendarTitle td, .calendarWeekendDay, .calendarOtherMonthDay   {
+            padding: 2px;
+            border: 1px solid #DAD6D3;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        .calendarTitle td { /* top bar with current month and next/previous buttons */
+            text-align: center;
+            background: #D0B411 !important;
+            color: #FFF;
+            padding: 3px 4px !important;    
+            text-transform: uppercase !important;
+            font-weight: normal !important;
+            font-weight: bold !important;    
+        }    
+            .calendarNextPrevious {
+                color: #fff !important;
+                font-weight: normal;
+                font-size: .9em;
+            }    
+                .calendarNextPrevious a {
+                    color: #317099 !important;
+                    font-weight: normal;
+                }    
+                
+        .calendarDayHeader { /* m-f bar */
+            color: #333;
+            background: #dad6d3;
+            font-weight: normal;
+            height: 1px;
+            text-align: center;
+            padding: 4px 2px;
+            text-transform: uppercase !important;
+            font-size: .9em;
+        }    
+            
+        .calendarToday, .calendarToday a { /* current day */
+            color: #333 !important;
+            background: #94C82B;
+            font-weight: bold;
+        }    
+        .calendarWeekendDay { /* weekends */
+            background: #fff;
+        }        
+        .calendarOtherMonthDay { /* previous or next months days on current months calendar */
+            color: #333;
+            background: #efefef;
+        }
+                
+        
+    /* calendar listing page */
+    .eventsList {
+        padding: 0;        
+    }
+        .eventsList ul {
+            margin: 0 !important;
+            padding: 0 !important;
+            list-style: none;
+        }
+            .eventsList ul li {
+                list-style: none;
+            }
+            
+            .eventsList ul li a {
+                font-weight: normal !important;
+                font-size: 1.2em;
+            }
+            
+                #subColumn .eventsList ul li a {
+                    font-weight: normal !important;
+                    font-size: 1.1em;
+                }
+            
+            .eventsList ul li .eventDate {
+                margin: 0 0 10px 0;
+                color: #666;
+            }
+                
+                
+    /* calendar detail page */
+    #secPage .event h2 {
+        margin: 0 0 0 0;
+    }
+        #secPage .event .eventDate {
+            margin: 0 0 10px 0;
+            color: #666;
+            font-style: normal;
+        }
+        #secPage .event .eventBack {
+            margin: 10px 0;
+            font-weight: bold;
+            border-top: 1px dotted #dad6d3;
+        }         
+
+/* ICEBRRG */
+    .fieldSelected { /* background color of a selected field. */
+        background: #EFEFEF !important;
+        border-color: #dadada !important;
+    }
+
+/* Scores Light Box */
+
+#fullRankings{
+    display: none;
+    background-color: #fff;
+    height:400px;
+    width:360px;
+    position: fixed;
+-webkit-border-radius: 5px; 
+    border-radius: 5px;
+-webkit-box-shadow: 4px 4px 8px 0px #424242; 
+    box-shadow: 4px 4px 8px 0px #424242; 
+}
+#fullRankings table{
+    width:300px;
+    margin:25px auto;
+}
+#fullRankings table tbody th{font-weight: bold;}
+#fullRankings table tbody tr th,
+#fullRankings table tbody tr td{text-align: center;}
+#fullRankings table tbody tr th:first-child,
+#fullRankings table tbody tr td:first-child {text-align: left;}
+#fullRankings table tbody tr:nth-child(odd) {
+   background-color: #ccc;
+}
+#fullRankings p{text-align: center;}
+#closeWindow{
+    width:24px;
+    height:24px;
+    background: url("/websites/bigdogcasino/templates/WildFrog-BLues/template/close.png");
+    position: absolute;
+    top:4px;
+    right:4px;
+    text-indent: -9999px;
+    cursor: pointer; 
+}

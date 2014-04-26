@@ -1,0 +1,25 @@
+/*
+	Template - Northern Light	
+	Author   - Neill Harmer	
+	Company  - Element Fusion
+	
+	Style    - print.css
+*/
+
+
+body {
+	background: #fff;
+	color: #000;
+	width: 8.5in;
+}	
+
+
+
+/* stuff to hide */
+#adminbar {
+	display: none;
+}
+
+
+
+		

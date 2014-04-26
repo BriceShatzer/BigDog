@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><$pagetitle/$> | <$websitename/$></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="style.css" rel="stylesheet" media="all" type="text/css" />
+    <!--[if lte IE 7]>
+        <link href="style-ie.css" rel="stylesheet" media="all" type="text/css" />
+    <![endif]-->   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="/jquery.lightbox_me.js"></script>
+<script type="text/javascript">
+  $.noConflict();
+  jQuery(document).ready(function($) {
+    $('#viewRankings').click(function(e) {
+      $('#fullRankings').lightbox_me({
+          closeSelector: '#closeWindow',
+          centered: true
+      });
+      e.preventDefault();
+    });
+  });
+</script> 
+                                  
+</head>
+
+<body id="homePage" class="navigationTopStatic" data-cmsadmin-layout-base="true">
+<div class="twoColumn">
+
+<div id="pageContainer">
+<div id="pageContainerShadow">
+<div id="pageContents" data-cmsadmin-layout-wrapper="true">
+
+    <$include virtual="inc/header.inc"/$>
+
+
+    <div id="contentContainer">
+
+        <div id="mainColumn" class="contents">
+
+            <div id="featuredItem">
+                <$region name="feature"$><$/region$>
+            </div>
+<!--- 
+            <div id="content" class="mainSub" data-cmsadmin-layout-content="true">
+                <$region name="main"$><$/region$>
+            </div>
+
+            <div id="content-extra" class="mainSub" data-cmsadmin-layout-content-extra="true">
+                <$region name="misc"$><$/region$>
+            </div>
+-->
+            
+        </div>
+
+        <div id="subColumn" class="contents" data-cmsadmin-layout-sidebar-a="true">
+
+            <div class="subBox subBoxGreen">
+                <$region name="sidebar_a"$><$/region$>
+            </div>
+
+           
+            <br />
+            <$region name="sidebar_c"$><$/region$>
+
+        </div>
+
+        <br class="clear" />
+    </div>
+
+    <br class="clear" />
+</div>
+</div>
+</div>
+
+
+<$include virtual="inc/footer.inc"/$>
+
+
+
+</div>
+</body>
+</html>

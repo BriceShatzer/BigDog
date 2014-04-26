@@ -1,0 +1,19 @@
+
+/* 
+
+these are additional styles geared towards our favorite browser, Internet Explorer. put ie only styles here. 
+any items with a _ preceeding it is a hack to work only on IE6 
+
+*/
+	
+
+#header .search {
+	margin-bottom: 45px;
+}
+	
+#navigation .mainNav {
+	padding: 3px 0 8px 0;
+}			
+	#navigation .mainNav li a {
+		padding: 8px 20px 8px 20px;
+	}

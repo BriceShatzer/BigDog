@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><$pagetitle/$> | <$websitename/$></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link href="style.css" rel="stylesheet" media="all" type="text/css" />
+	<!--[if lte IE 7]>
+		<link href="style-ie.css" rel="stylesheet" media="all" type="text/css" />
+	<![endif]-->
+	<script src="scripts/jquery.js" type="text/javascript"></script>	
+</head>
+
+<body id="homePage">
+<div id="body" class="twoColumn" data-cmsadmin-layout-base="true">
+
+<div id="pageContainer">
+
+	<$include virtual="inc/header.inc"/$>	
+		
+	
+	<div id="contentContainer" data-cmsadmin-layout-wrapper="true">	
+	
+		<div id="featuredImage">
+			<$region name="feature"$><$/region$>
+		</div>			
+		
+		<div id="featuredArea" data-cmsadmin-layout-content-extra="true">
+			<div id="featuredLeft" class="contents">
+				<$region name="misc"$><$/region$>		
+			</div>
+		
+			<div id="featuredRight" class="contents">
+				<$region name="sidebar_b"$><$/region$>	
+			</div>
+			
+			<br class="clear" />
+		</div>
+		
+		
+		<div id="subColumn" class="contents" data-cmsadmin-layout-sidebar-a="true">
+			<$region name="sidebar_a"$><$/region$>
+		</div>
+		
+		
+		<div id="mainColumn" class="contents" data-cmsadmin-layout-content="true">
+			<$region name="main"$><$/region$>	
+		</div>	
+
+		<br class="clear" />
+	</div>
+
+
+	<$include virtual="inc/footer.inc"/$>
+	
+</div>
+</div>
+
+
+</body>
+</html>

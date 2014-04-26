@@ -1,0 +1,375 @@
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #515151;
+    background:url('http://bigdogcasino.publishpath.com/websites/bigdogcasino/templates/WildFrog-Blues/template/poker_cards.jpg') no-repeat center top fixed;
+    font-size: 75%;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+}        
+
+
+
+    html>body {
+        font-size: 12px;
+    }    
+    
+
+
+    
+    
+/* skip to content hidden button, for minor accessibility reasons */
+#skipTo {
+    display: none;
+}    
+    
+        
+        
+        
+        
+#pageContainer {
+    width: 960px;
+    margin: 40px auto 0 auto;
+    position:relative;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 7px;
+-moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 7px;
+box-shadow: rgba(0, 0, 0, 0.5) 0 1px 7px;
+}
+        
+#pageContainerShadow {
+}
+
+#pageContents {    
+    background-color: #fff;
+    margin: -20px 0 0 -20px;
+    padding: 15px 15px 10px 15px;
+}
+
+.clear {clear: both}
+        
+
+    
+
+            
+
+            
+            
+/* HEADER */    
+
+/* search form */
+#header .search {
+    float: right;
+    margin: 40px 0 0 0;
+}
+    #header .search label {
+        display: none;
+    }    
+    #header .search .searchInput {
+        border: 1px solid #bbb;
+        border-width: 2px 1px 1px;
+        padding: 2px 5px;
+    }    
+    #header .search .searchButton {
+        border: none;
+        background: url(template/search-button.jpg);
+        width: 52px;
+        height: 21px;
+        color: #fff;
+    }            
+    
+    
+#header #logo {
+    float: left;
+    width: 421px;
+    height: 87px;
+    margin: 0 0 15px 0;
+}    
+    
+    
+    
+    
+    
+    
+/* NAVIGATION */    
+#navigation {
+    margin-bottom: 15px;
+    clear: both;
+}
+    #navigation .mainNav {
+        border: 1px dotted #dad6d3;
+        border-width: 1px 0;
+        padding: 8px 0 7px 0;
+    }        
+            
+        #navigation .mainNav li {
+            display: inline;
+            font-size: 1.2em;
+        }
+        
+        #navigation .mainNav li a {
+            color: #999;
+            text-decoration: none;
+            padding: 9px 20px 8px 20px;
+        }
+            #navigation .mainNav li a:hover, 
+            #navigation .mainNav li a:focus, 
+            #navigation .mainNav li.selectedPage a, 
+            #navigation .mainNav li.selectedPageRoot a {
+                color: #D40400;    
+                border: 1px dotted #D40400;
+                border-width: 1px 0;
+            }
+            
+            
+            /* hiding subnavs */
+            #navigation .mainNav li ul.level2, 
+            #navigation .mainNav li ul.level3, 
+            #navigation .mainNav li ul.level4 {
+                display: none;
+            }                
+
+        
+
+/*----- Cart Status -------
+-------------------------*/
+#cartStatus.cartFull {
+background: #317099;
+position: absolute;
+top: 0;
+text-align: center;
+right: 30px;
+padding: 10px 30px;
+color: #D9D5C0;
+float: right;
+font-size: 12px;
+margin-top: -17px;}
+#cartStatus.cartFull a { text-decoration:none; color:#fff; }
+        
+        
+        
+/* CONTENT AREA */
+
+
+		/*---table style---*/
+.datagrid table { border-collapse: collapse; text-align: left; width: 100%; } 
+.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #36752D; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.datagrid table td, .datagrid table th { padding: 3px 10px; }
+.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #36752D; } 
+.datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #275420; border-left: 1px solid #C6FFC2;font-size: 12px;font-weight: normal; }.datagrid table tbody .alt td { background: #DFFFDE; color: #275420; }
+.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }
+.datagrid table tfoot td div { border-top: 1px solid #36752D;background: #DFFFDE;} 
+.datagrid table tfoot td { padding: 0; font-size: 12px } .datagrid table tfoot td div{ padding: 2px; }
+.datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }
+.datagrid table tfoot  li { display: inline; }
+.datagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #36752D;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; }
+.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #275420; color: #FFFFFF; background: none; background-color:#36752D;}
+		
+		
+#contentContainer {    
+    clear: both;
+}    
+
+.button {
+  text-decoration: none;
+  background-color: #D40400;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding: .5em 2em .50em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .2em;
+  border-radius: .2em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: solid 1px #A52D1F;
+  background: -moz-linear-gradient(top, #D40400, #A52D1F); }
+  /* line 49, sass/_buttons.scss */
+  .button:hover {
+    color:#fff;
+    background: #7f2318;
+    background: -webkit-gradient(linear, left top, left bottom, from(#A52D1F), to(#7F2318));
+    background: -moz-linear-gradient(top, #A52D1F, #7F2318); }
+
+.button:visited {color:#fff;}
+
+
+
+    /* column layouts */
+        /* three column */
+        .threeColumn #mainColumn {
+            float: left;
+            width: 262px;
+            margin-right: 25px;
+        }        
+            .threeColumn #subColumn {
+                float: left;
+                width: 262px;
+                margin-right: 25px;
+            }
+            .threeColumn #extraColumn {
+                float: left;
+                width: 180px;
+            }
+        
+        
+        /* two column layout */
+        .twoColumn #mainColumn {
+            float: left;
+            width: 640px;
+            margin-right: 10px;
+            padding-left: 10px;
+        }            
+            .twoColumn #subColumn {
+                float: left;
+                width: 265px;
+            }
+            
+        
+        /* one column */
+        .oneColumn #mainColumn {
+            padding: 10px 20px;
+        }            
+    /* end columns */
+    
+    
+    
+#rules ul     
+    {list-style: none;}
+    
+    
+#featuredItem {
+    margin-bottom: 10px;
+}
+    #featuredItem img {
+        border: 5px solid #dad6d3;
+    }
+    
+    
+    
+#homePage #mainColumn .mainSub {
+    width: 308px;
+    border-top: 10px solid #d0b411;
+    float: left;
+    padding-top: 2px;
+    margin: 0 25px 0 5px;
+    display: inline;
+}
+    #homePage #mainColumn .mainSub img {
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    
+#secPage #subColumn .subBox .element, 
+#homePage #subColumn .subBox {
+    background: #eeeded;
+    margin-bottom: 15px;
+    padding: 0px 10px 5px 20px;
+}
+    #subColumn .subBoxBlue {
+        border-top: 8px solid #317099;
+    }    
+        #subColumn .subBoxBlue h1 {
+            color: #317099;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }    
+            #subColumn .subBoxBlue a {
+                color: #317099;
+            }    
+    #subColumn .subBoxGreen {
+        border-top: 8px solid #d40400;
+    }    
+        #subColumn .subBoxGreen h1 {
+            color: #d40400;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }        
+            #subColumn .subBoxGreen a {
+                color: #7ca824;
+            }        
+    #subColumn .subBoxGold .element {
+        border-top: 8px solid #d0b411;
+    }    
+        #subColumn .subBoxGold h1 {
+            color: #d0b411;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }        
+            #subColumn .subBoxGold a {
+                color: #d0b411;
+            }    
+
+    
+
+        
+#secPage #subNav {
+    background: #EEEDED;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+}    
+    #secPage #subNav .subNav {
+        color: #d40400;
+        list-style: disc;
+        list-style-position: inside;
+        font-size: 1.1em;    
+        margin: 0;
+    }    
+        #secPage #subNav .subNav li {
+            background: url(template/sub-nav-break.jpg) bottom left repeat-x;
+            margin: 5px 0;
+            padding-bottom: 5px;
+        }
+            #secPage #subNav .subNav li a {
+                text-decoration: none;
+                color: #d40400;
+                padding-left: 5px;
+            }
+                #secPage #subNav .subNav li a:hover {
+                    text-decoration: underline;
+                }
+
+
+    
+    
+        
+/* SITE FOOTER/NAVIGATION */
+#footer {
+    width: 940px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: .9em;
+    padding: 10px 10px 50px;
+}    
+    #footer a {
+        color: #fff;
+        text-decoration: none;
+    }    
+        
+    
+    #poweredBy {
+        float: right;
+    }
+        #poweredBy a {
+            display: block;
+            width: 139px;
+            height: 23px;
+            text-indent: -9999px;
+        }
+            #poweredBy #discoverSky a {
+                background: url(template/powered-by-sky-trans.png) no-repeat;
+            }
+            #poweredBy #embraceWater a {
+                background: url(template/powered-by-water-trans.png) no-repeat;
+            }
+        
+            
